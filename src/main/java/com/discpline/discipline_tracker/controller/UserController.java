@@ -15,7 +15,7 @@ import com.discpline.discipline_tracker.entity.User;
 import com.discpline.discipline_tracker.repository.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "https://discipline-frontend-zeta.vercel.app/")
+@CrossOrigin(origins = "https://discipline-frontend-zeta.vercel.app")
 @RequestMapping("/users")
 public class UserController {
 
