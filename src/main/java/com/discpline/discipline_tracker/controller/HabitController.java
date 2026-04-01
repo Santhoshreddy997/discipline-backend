@@ -21,7 +21,7 @@ import com.discpline.discipline_tracker.repository.TaskRepository;
 
 @RestController
 @RequestMapping("/habits")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://discipline-frontend-zeta.vercel.app")
 public class HabitController {
 
     @Autowired

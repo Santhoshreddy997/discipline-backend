@@ -13,7 +13,7 @@ import com.discpline.discipline_tracker.entity.User;
 import com.discpline.discipline_tracker.repository.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://discipline-frontend-zeta.vercel.app")
 @RequestMapping("/auth")
 public class AuthController {
 

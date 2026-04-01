@@ -1,21 +1,31 @@
 package com.discpline.discipline_tracker.controller;
 
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+import com.discpline.discipline_tracker.entity.Habit;
 import com.discpline.discipline_tracker.entity.Task;
 import com.discpline.discipline_tracker.entity.User;
-import com.discpline.discipline_tracker.entity.Habit;
+import com.discpline.discipline_tracker.repository.HabitRepository;
 import com.discpline.discipline_tracker.repository.TaskRepository;
 import com.discpline.discipline_tracker.repository.UserRepository;
-import com.discpline.discipline_tracker.repository.HabitRepository;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://discipline-frontend-zeta.vercel.app")
 public class TaskController {
 
     @Autowired
